@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - entry point for compiler
+ *
+ * Return: Always 0 (success)
+ */
 
 int main (void)
 {
