@@ -20,9 +20,10 @@ void rev_string(char *s)
 
 	for (i = 0; i <= l / 2; i++)
 	{
-		*(s + n) = c;
+		c = *(s + n);
 		*(s + n) = *(s + (l - n));
 		*(s + (l -n)) = c;
 		n++;
 	}
+	_putchar('\n');
 }
