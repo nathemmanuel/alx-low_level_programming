@@ -10,10 +10,13 @@
 void puts_half(char *str)
 {
 	int n, l;
-
+// 0123456789 
 	while (*(str + l) != '\0')
 		l++;
-	l--;
-	for (n = (l / 2); *(str + n) != '\0'; n++)
+	n = l / 2;
+	while (*(str + n) != '\0')
+	{
 		_putchar(*(str + n));
+		n++;
+	}
 }
