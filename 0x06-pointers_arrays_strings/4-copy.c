@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 		l++;
 	l--; // l=12
 	n--; // n = 12
-	for (i = 0; i < n / 2; i++)
+	for (i = 0; i < l / 2; i++)
 	{
 		/*
 		 * m = a[0]; a[0] = a[12-0]; a[12] = m
@@ -30,7 +30,7 @@ void reverse_array(int *a, int n)
 		 * 
 		 */
 		m = *(a + i);
-		*(a + i) = *(a + l - i);
-		*(a + l - i) = m;
+		*(a + i) = *(a + n - i);
+		*(a + n - i) = m;
 	}
 }
