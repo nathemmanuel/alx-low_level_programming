@@ -4,6 +4,7 @@
  * _strncat - This appends the string src to dest up to n characters
  * @dest: This is the string to which src is appended
  * @src: This is the string that is appended
+ * @n: number of characters to append
  *
  * Return: dest
  */
