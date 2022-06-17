@@ -25,8 +25,8 @@ char *leet(char *string)
 				*(a + i) = *(b + i);
 			}
 			i++;
-			j++;
 		}
+		j++;
 	}
 	return (string);
 }
