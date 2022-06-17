@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 
-int main()
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	char c = ' ';
-	char t = 0;
-	char a = 'k';
-
-	int b = c + a;
-	printf("%c\n", t);
-	// every character has an integer value
-	// Integer values up till 255 have corresponding character values 
-	return (0);
+    print_square(2);
+    print_square(10);
+    print_square(0);
+    return (0);
 }
