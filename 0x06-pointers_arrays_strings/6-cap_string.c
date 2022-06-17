@@ -6,6 +6,7 @@
  *
  * Return: c
  */
+
 char *cap_string(char *c)
 {
 	int i, position;
