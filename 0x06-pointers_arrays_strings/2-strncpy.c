@@ -4,6 +4,7 @@
  * _strncpy - copies the first n characters of src to dest
  * @dest: Destination string
  * @src: String that the text is copied from
+ * @n: number of characters you want to update
  *
  * Return: dest
  */

@@ -4,7 +4,7 @@
  * leet - replaces certain characters with digits
  * @string: String
  *
- * Return: c
+ * Return: string
  */
 
 char *leet(char *string)
@@ -20,7 +20,8 @@ char *leet(char *string)
 	{
 		while (i < 5)
 		{
-			if (*(a + i) || *(a + i) - 32)
+			if (*(a + i) == *(string + j)
+					|| *(a + i) - 32 == *(string + j))
 			{
 				*(a + i) = *(b + i);
 			}
