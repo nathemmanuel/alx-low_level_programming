@@ -10,14 +10,13 @@
 
 void reverse_array(int *a, int n)
 {
-	//13
-	int i, m, l; // l is counter, m is dummy variable, i is loop variable, n is number of characters you want to switch
+	int i, m, l;
 
 	l = 0;
 	while (*(a + l) != '\0')
 		l++;
-	l--; // l=12
-	n--; // n = 12
+	l--;
+	n--;
 	for (i = 0; i < n / 2; i++)
 	{
 		/*
