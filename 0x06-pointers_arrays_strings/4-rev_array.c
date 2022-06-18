@@ -29,7 +29,7 @@ void reverse_array(int *a, int n)
 		 * 
 		 */
 		m = *(a + i);
-		*(a + i) = *(a + l - i);
-		*(a + l - i) = m;
+		*(a + i) = *(a + n - i);
+		*(a + n - i) = m;
 	}
 }
