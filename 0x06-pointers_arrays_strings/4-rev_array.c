@@ -26,7 +26,7 @@ void reverse_array(int *a, int n)
 		 * (i = 3) m = a[3]; a[3] = a[12-3]; a[9] = m
 		 * (i = 4) m = a[4]; a[4] = a[12 - 4]; a[8] = m
 		 * (i = 5) m = a[5]; a[5] = a[12-5]; a[7] = m
-		 * 
+		 *
 		 */
 		m = *(a + i);
 		*(a + i) = *(a + n - i);
