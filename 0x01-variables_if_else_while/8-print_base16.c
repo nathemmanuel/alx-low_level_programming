@@ -1,18 +1,30 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Entry point for compiler
+ * main - Entry point
  *
  * Return: Always 0(success)
- */
+*/
+
 int main(void)
 {
-	int n;
+	char c, d;
 
-	for (n = 48; n < 58; n++)
-		putchar(n);
-	for (n = 97; n <= 102; n++)
-		putchar(n);
+	d = 97;
+	c = 48;
+
+	while (c < 58)
+	{
+		putchar(c);
+		c++;
+	}
+	while (d <= 102)
+	{
+		putchar(d);
+		d++;
+	}
 	putchar('\n');
+
 	return (0);
 }

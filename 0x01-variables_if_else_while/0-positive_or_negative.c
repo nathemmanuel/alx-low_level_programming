@@ -1,12 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- * main - entry point for compiler
+ * main - Entry point
  *
- * Return: Always 0(success)
- */
+ * Return: Always 0 (success)
+*/
+
 int main(void)
 {
 	int n;
@@ -15,10 +16,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
-		printf("%d is positive\n", n);
+		printf("The number is positive\n");
 	else if (n < 0)
-		printf("%d is negative\n", n);
-	else
-		printf("%d is zero\n", n);
+		printf("The number is negative\n");
+	else if (n == 0)
+		printf("The number is zero\n");
 	return (0);
 }

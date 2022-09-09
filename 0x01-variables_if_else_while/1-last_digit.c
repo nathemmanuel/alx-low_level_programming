@@ -1,27 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- * main - Entry point for compiler
+ * main - Entry point
  *
  * Return: Always 0 (success)
- */
+*/
+
 int main(void)
 {
-	int n;
-	int k;
+	int n, l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	k = n % 10;
+	l = n % 10;
 
-	if (k > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, k);
-	else  if ((k < 6) && (k != 0))
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, k);
-	else if (k == 0)
-		printf("Last digit of %d is %d and is 0\n", n, k);
-
+	if (l > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, l);
+	else if (l < 6 && l != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
+	else if (l == 0)
+		printf("Last digit of %d is %d and is 0\n", n, l);
 	return (0);
 }

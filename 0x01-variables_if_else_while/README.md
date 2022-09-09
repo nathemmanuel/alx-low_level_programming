@@ -1,5 +1,8 @@
-#Loops and conditional statements
-This deals with loops and conditional statements in C
-
-##Task 0
-Prints different statements depending on whether a generated random number is greater, less or equal to zero
+# 0x01 - Variables, if-else, while
+1. This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative.
+The output of the program should be:
+The number, followed by
+if the number is greater than 0: `is positive`
+if the number is 0: `is zero`
+if the number is less than 0: `is negative`
+followed by a new line
