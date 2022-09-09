@@ -10,8 +10,8 @@
 int main(void)
 {
 	char c;
-	c = 97;
 
+	c = 97;
 	while (c <= 122)
 	{
 		putchar(c);
