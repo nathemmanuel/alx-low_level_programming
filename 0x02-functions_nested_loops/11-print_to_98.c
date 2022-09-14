@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints upwards or downwards to 98 
+ * print_to_98 - prints upwards or downwards to 98
  * @n: The starting number
  *
  * Return: Void
