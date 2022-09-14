@@ -2,9 +2,9 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: The integer value passed to it
+ * @n: The variable to be checked
  *
- * Return: n
+ * Return: The absolue value of n
  */
 
 int _abs(int n)
@@ -12,5 +12,5 @@ int _abs(int n)
 	if (n >= 0)
 		return (n);
 	else
-		return (n * (-1));
+		return (n * -1);
 }

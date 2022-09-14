@@ -3,8 +3,9 @@
 /**
  * main - Entry point for compiler
  *
- * Return: Always 0 (indicates success)
+ * Return: 0(success)
  */
+
 int main(void)
 {
 	write(1, "_putchar\n", 9);
