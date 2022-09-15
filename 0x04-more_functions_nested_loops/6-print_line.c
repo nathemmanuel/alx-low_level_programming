@@ -1,24 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - prints the character '_' n times
- * @n: Determines the number of '_' that'll be printed
+ * print_line - prints as many lines as the argument dictates
+ * @n: The number of times the line is printed
  *
  * Return: Void
  */
 
 void print_line(int n)
 {
-	int i;
+	int a;
 
-	if (n > 0)
+	for (a = 1; a <= n; a++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
+		_putchar('_');
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
 }

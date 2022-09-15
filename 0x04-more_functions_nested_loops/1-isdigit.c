@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if c is a digit
- * @c: The value to be checked
+ * _isdigit - checks if a character is a digit
+ * @c: ASCII value of the character
  *
- * Return: 1 if c is a digit, 0 if not
+ * Return: 1 (if digit) 0 (otherwise)
  */
 
 int _isdigit(int c)
