@@ -10,24 +10,22 @@ int main(void)
 {
 	int a;
 
-	for (a = 0; a <= 100; a++)
+	for (a = 1; a <= 100; a++)
 	{
-		if (a % 3 == 0)
+		if (a % 15 == 0)
 		{
-			printf("Fizz ");
-			a++;
+			printf("FizzBuzz ");
 		}
 		else if (a % 5 == 0)
 		{
 			printf("Buzz ");
-			a++;
 		}
-		else if (a % 15 == 0)
+		else if (a % 3 == 0)
 		{
-			printf("FizzBuzz ");
-			a++;
+			printf("Fizz ");
 		}
-		printf("%d ", a);
+		else
+			printf("%d ", a);
 	}
 	printf("\n");
 }
