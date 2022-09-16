@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints Fizz for multiples of 3 and Buzz for multiples of 5, for 15: prints FizzBuzz
