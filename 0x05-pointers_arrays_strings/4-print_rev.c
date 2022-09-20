@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse
- * @s: Holds the address of the 0th element in the array
+ * print_rev - prints the string in reverse
+ * @s: holds the address of the array
  *
- * Return: Void
+ * Return: Nothing
  */
 
 void print_rev(char *s)
 {
-	int i;
+	int l;
 
-	i = 0;
-	while (*(s + i) != '\0')
+	while (*(s + l) != '\0')
 	{
-		i++;
+		l++;
 	}
-	i--;
-	while (i >= 0)
+	l--;
+	while (l >= 0)
 	{
-		_putchar(*(s + i));
-		i--;
+		_putchar(*(s + l));
+		l--;
 	}
 	_putchar('\n');
 }

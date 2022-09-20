@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * puts2 - Prints every other character of a string to stdout
- * @str: The string to be printed to the output
+ * puts2 - prints a character every other time
+ * @str: holds the address of the array
  *
- * Return: Void
+ * Return: Nothing
  */
 
 void puts2(char *str)
 {
-	int n;
+	int l;
 
-	n = 0;
-	while (*(str + n) != '\0')
+	while (*(str + l) != '\0')
 	{
-		if (n % 2 == 0)
-			_putchar(*(str + n));
-		n++;
+		_putchar(*(str + l));
+		l += 2;
 	}
 	_putchar('\n');
 }

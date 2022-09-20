@@ -2,18 +2,26 @@
 #include <stdio.h>
 
 /**
- * print_array - prints the first n elements of an array
- * @a: the array
- * @n: The number of elements to be printed
+ * print_array - prints up to n characters of a string
+ * @a: holds the address of the string
+ * @n: The number of characters that should be printed
  *
- * Return: Void
+ * Return: Nothing
  */
 
 void print_array(int *a, int n)
 {
-	int i;
+	int l;
 
-	for (i = 0; i < n; i++)
-		printf("%d, ", *(a + i));
+	l = 0;
+	while (l < n)
+	{
+		printf("%d", a[l]);
+		if (l != (n - 1))
+		{
+			printf(", ");
+		}
+		l++;
+	}
 	_putchar('\n');
 }

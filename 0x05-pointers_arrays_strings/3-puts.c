@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * _puts - prints the string to stdout
- * @str: The string to be printed to the output
+ * _puts - prints a string, followed by a newline
+ * @str: Holds the address of the first element
+ * of the array to be passed to it
  *
  * Return: Void
  */
-
 void _puts(char *str)
 {
-	int n;
+	int a;
 
-	n = 0;
-	while (*(str + n) != '\0')
+	while (*(str + a) != '\0')
 	{
-		_putchar(*(str + n));
-		n++;
+		_putchar(*(str + a));
+		a++;
 	}
 	_putchar('\n');
 }
