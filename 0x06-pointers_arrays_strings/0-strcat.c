@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
- * _strcat - appends src to the dest string
- * @dest: Destination string
- * @src: Source string
+ * _strcat - joins two strings together
+ * @dest: String to be added to
+ * @src: String to be added
  *
- * Return: dest
+ * Return: The array (basically, a pointer to) dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i, n;
+	int l, a;
 
-	i = 0;
-	n = 0;
-	while (*(dest + i) != '\0')
-		i++;
-	while (*(src + n) != '\0')
+	a = 0;
+	l = 0;
+	while (*(dest + l) != '\0')
+		l++;
+	while (*(src + a) != '\0')
 	{
-		*(dest + i + n) = *(src + n);
-		n++;
+		*(dest + l) = *(src + a);
+		a++;
+		l++;
 	}
 	return (dest);
 }

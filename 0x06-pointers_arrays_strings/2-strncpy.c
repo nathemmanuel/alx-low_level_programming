@@ -1,24 +1,19 @@
 #include "main.h"
 
 /**
- * _strncpy - copies the first n characters of src to dest
- * @dest: Destination string
- * @src: String that the text is copied from
- * @n: number of characters you want to update
+ * _strncpy - copies the first n elements of a string to another string
+ * @dest: String to be copied to
+ * @src: String to be copied
+ * @n: The number of characters in src to copy
  *
- * Return: dest
+ * Return: The array (basically, a pointer to) dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int a;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-	{
-		*(dest + i) = *(src + i);
-	}
-	for ( ; i < n; i++)
-		dest[i] = '\0';
-
+	for (a = 0; (a < n) && (*(src + a) != '\0'); a++)
+		*(dest + a) = *(src + a);
 	return (dest);
 }
