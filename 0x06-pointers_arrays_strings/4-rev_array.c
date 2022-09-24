@@ -15,15 +15,15 @@ void reverse_array(int *a, int n)
 
 	d = 0;
 	l = 0;
-	while (*(s + l) != '\0')
+	while (*(a + l) != '\0')
 	{
 		l++;
 	}
 	while (d <= n/2 && d <= l)
 	{
 		p = *(s + l);
-		*(s + l) = *(s + d);
-		*(s + d) = p;
+		*(a + l) = *(s + d);
+		*(a + d) = p;
 
 		l--;
 		d++;
