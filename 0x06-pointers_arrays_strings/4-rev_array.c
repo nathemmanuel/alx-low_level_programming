@@ -21,8 +21,8 @@ void reverse_array(int *a, int n)
 	}
 	while (d <= n/2 && d <= l)
 	{
-		p = *(s + l);
-		*(a + l) = *(s + d);
+		p = *(a + l);
+		*(a + l) = *(a + d);
 		*(a + d) = p;
 
 		l--;
