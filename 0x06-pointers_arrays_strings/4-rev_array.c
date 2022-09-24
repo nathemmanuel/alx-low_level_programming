@@ -10,22 +10,22 @@
 
 void reverse_array(int *a, int n)
 {
-	int l, a;
+	int l, d;
 	int p;
 
-	a = 0;
+	d = 0;
 	l = 0;
 	while (*(s + l) != '\0')
 	{
 		l++;
 	}
-	while (a <= n/2 && a <= l)
+	while (d <= n/2 && d <= l)
 	{
 		p = *(s + l);
-		*(s + l) = *(s + a);
-		*(s + a) = p;
+		*(s + l) = *(s + d);
+		*(s + d) = p;
 
 		l--;
-		a++;
+		d++;
 	}
 }
