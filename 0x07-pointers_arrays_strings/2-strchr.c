@@ -4,19 +4,20 @@
  * _strchr - returns a pointer to the first occurence of a
  * character c in the string s, or NULL if said character
  * isn't found
- *
  * @s: The string (one-dimensional array of characters)
  * @c: The \"Nemo\" we're finding
  *
  * Return: A pointer to the first occurence of c
  */
+
 char *_strchr(char *s, char c)
 {
 	int l;
 
 	for (l = 0; *(s + l) != '\0'; l++)
 	{
-		if(s[l] == c) /* s[l] is the same as *(s + l) */
+		if(s[l] == c) 
+			/* s[l] is the same as *(s + l) */
 			return (s + l);
 	}
 	return (0);
