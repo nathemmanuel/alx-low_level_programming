@@ -1,4 +1,4 @@
-# include "main,h"
+# include "main.h"
 
 /**
  * _memset - fills the first n bytes of the memory area
@@ -16,13 +16,11 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
-	char **p;
+	unsigned int i;
 
-	p = &s;
 	for (i = 0; i <= n; i++)
 	{
 		*(s + i) = b;
 	}
-	return (p);
+	return (s);
 }
