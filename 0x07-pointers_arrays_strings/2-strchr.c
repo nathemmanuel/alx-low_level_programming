@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 			 */
 			return (s + l);
 	}
-	return (NULL);
+	return (0);
 	/*
 	 * if you\'re wondering why I didn\'t add an else statement
 	 * or some else statements, it is because once the compiler
