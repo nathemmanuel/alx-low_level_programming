@@ -6,6 +6,8 @@
  * @s: The pointer that holds the address of the array to
  * be manipulated
  * @b: The constant byte
+ * @n: The number of elements of the array you want to alter
+ *
  * Return: The pointer to the memory area s
  */
 
@@ -18,7 +20,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
 		*(s + i) = b;
 	}
