@@ -17,10 +17,12 @@ char *_strchr(char *s, char c)
 	for (l = 0; *(s + l) != '\0'; l++)
 	{
 		if(s[l] == c) 
-			/* s[l] is the same as *(s + l) */
+			/*
+			 * s[l] is the same as *(s + l)
+			 */
 			return (s + l);
 	}
-	return (0);
+	return (NULL);
 	/*
 	 * if you\'re wondering why I didn\'t add an else statement
 	 * or some else statements, it is because once the compiler
