@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    times_table();
+    more_numbers();
     return (0);
 }

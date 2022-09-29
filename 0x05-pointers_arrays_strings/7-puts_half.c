@@ -16,15 +16,15 @@ void puts_half(char *str)
 	{
 		l++; /* string length */
 	}
-	if (l % 2 == 0) /* Even test */
-	{
+	/* if (l % 2 == 0)  Even test 
+	{ */
 		for (a = l / 2 ; (a >= (l / 2) && a <= (l - 1)); a++)
 		{
 			_putchar(*(str + a));
 		}
-	}
-	else
+	// }
+	 /* else
 		for (a = l / 2; (a >= (l - 1) / 2) && (a <= l - 1); a++)
-			_putchar(*(str + a));
+			_putchar(*(str + a)); */
 	_putchar('\n');
 }
