@@ -20,5 +20,4 @@ void _puts_recursion(char *s)
 		a++;
 		_puts_recursion(s + a);
 	}
-	// _putchar('\n');
 }
