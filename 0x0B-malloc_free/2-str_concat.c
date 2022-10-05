@@ -11,11 +11,13 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+	int i, j, m, l;
 	char *s3;
 
 	i = 0;
 	j = 0;
+	m = 0;
+	l = 0;
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
