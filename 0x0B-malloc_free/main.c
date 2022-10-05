@@ -1,44 +1,107 @@
 #include <stdio.h>
+
 #include <stdlib.h>
- 
-int main()
+
+
+
+char *create_array(unsigned int, char);
+
+
+
+/**
+ *
+ *  * simple_print_buffer - prints buffer in hexa
+ *
+ *   * @buffer: the address of memory to print
+ *
+ *    * @size: the size of the memory to print
+ *
+ *     *
+ *
+ *      * Return: Nothing.
+ *
+ *       */
+
+void simple_print_buffer(char *buffer, unsigned int size)
+
 {
- 
-    // This pointer will hold the
-    // base address of the block created
-    int* ptr;
-    int n, i;
- 
-    // Get the number of elements for the array
-    printf("Enter number of elements:");
-    scanf("%d",&n);
-    printf("Entered number of elements: %d\n", n);
- 
-    // Dynamically allocate memory using malloc()
-    ptr = (int*)malloc(n * sizeof(int));
- 
-    // Check if the memory has been successfully
-    // allocated by malloc or not
-    if (ptr == NULL) {
-        printf("Memory not allocated.\n");
-        exit(0);
-    }
-    else {
- 
-        // Memory has been successfully allocated
-        printf("Memory successfully allocated using malloc.\n");
- 
-        // Get the elements of the array
-        for (i = 0; i < n; ++i) {
-            ptr[i] = i + 1;
-        }
- 
-        // Print the elements of the array
-        printf("The elements of the array are: ");
-        for (i = 0; i < n; ++i) {
-            printf("%d, ", ptr[i]);
-        }
-    }
- 
-    return 0;
+
+		unsigned int i;
+
+
+
+			i = 0;
+
+				while (i < size)
+
+						{
+
+									if (i % 10)
+
+												{
+
+																printf(" ");
+
+																		}
+
+											if (!(i % 10) && i)
+
+														{
+
+																		printf("\n");
+
+																				}
+
+													printf("0x%02x", buffer[i]);
+
+															i++;
+
+																}
+
+					printf("\n");
+
+}
+
+
+
+/**
+ *
+ *  * main - check the code .
+ *
+ *   *
+ *
+ *    * Return: Always 0.
+ *
+ *     */
+
+int main(void)
+
+{
+
+		char *buffer;
+
+			unsigned int size;
+
+
+
+				size = 102;
+
+					buffer = create_array(size, 10);
+
+						if (buffer == NULL)
+
+								{
+
+											printf("failed to allocate memory\n");
+
+													return (1);
+
+														}
+
+							simple_print_buffer(buffer, size);
+
+								free(buffer);
+
+									return (0);
+
 }

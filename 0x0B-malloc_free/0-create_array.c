@@ -21,6 +21,6 @@ char *create_array(unsigned int size, char c)
 	if (strng == NULL)
 		return (NULL);
 	strng[0] = c;
-	free(strng);
 	return (strng);
+	free(strng);
 }
