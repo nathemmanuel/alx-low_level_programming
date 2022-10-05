@@ -16,11 +16,11 @@ char *create_array(unsigned int size, char c)
 	char *strng;
 
 	strng = malloc(size * sizeof(char));
+	strng[0] = c;
 	if (size  == 0)
 		return NULL;
 	if (strng == NULL)
 		return NULL;
-	strng[0] = 'c';
 	free(strng);
 	return (strng);
 }
