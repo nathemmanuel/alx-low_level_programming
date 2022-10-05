@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strdup - returns a pointer to a duplicate string
+ * _strdup - returns a pointer to a duplicate string
  * @str: The string to be duplicated
  *
  * Return: Pointer to the new string
@@ -23,6 +23,6 @@ char *_strdup(char *str)
 	{
 		strn[j] = str[j];
 	}
-	free(strn);
 	return (strn);
+	free(strn);
 }
