@@ -20,5 +20,6 @@ char *create_array(unsigned int size, char c)
 		return NULL;
 	strng = malloc(size * sizeof(char));
 	strng[0] = 'c';
+	free(strng);
 	return (strng);
 }
