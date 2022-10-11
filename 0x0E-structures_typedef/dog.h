@@ -15,4 +15,4 @@ struct dog
 	 * 'char *' just means it receives the address of the first element
 	 * of the array
 	 */
-}
+};
