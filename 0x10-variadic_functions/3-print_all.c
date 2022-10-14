@@ -16,17 +16,18 @@ void print_all(const char * const format, ...)
 
 	while (*(format + i) != '\0')
 	{
-		if (*(format + i) == "c")
-			printf("%c", va_arg(list, char));
-		else if (*(format + i) == "i")
+		if (*(format + i) == 'c')
+			printf("%c", va_arg(list, int));
+		else if (*(format + i) == 'i')
 			printf("%d", va_arg(list, int));
-		else if (*(format + i) == "f")
-			printf("%f", va_arg(list, float));
-		else if (*(format + i) == "s")
+		else if (*(format + i) == 'f')
+			printf("%f", va_arg(list, double));
+		else if (*(format + i) == 's')
 		{
-			if (*(format + i) == NULL)
+			if (va_arg(list, char*) == NULL)
 				printf("(nil)");
-			printf("%s", va_arg(list, char *));
+			else
+				printf("%s", va_arg(list, char *));
 		}
 		i++;
 	}
