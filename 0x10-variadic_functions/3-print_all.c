@@ -27,6 +27,7 @@ void print_all(const char * const format, ...)
 			if (*(format + i) == NULL)
 				printf("(nil)");
 			printf("%s", va_arg(list, char *));
+		}
 		i++;
 	}
 		printf("\n");
