@@ -1,4 +1,6 @@
 #include "100-main.h"
+#include <iomanip>
+#include <fstream>
 /**
 * FillShoppingInfo - Asks the user to enter all information
 * for a Person instance
@@ -32,35 +34,18 @@ void FillShoppingInfo(Person* Eni)
 *
 * Return: Void
 */
+
 void WriteReceipt(Person Fellow)
 {
-	/*
-	* should ideally write this into a file but
-	* I'll write it to stdout for now
-	*/ 
-	cout << Fellow.Stall.ShopName;
-	cout << Fellow.Stall.Address;
-	cout << "Customer\t" << Fellow.Being.CustomerName;
-	cout << "Phone Numner\t" << Fellow.Being.Phonenumber;
-	cout << "\nYour order\n\n";
-	cout << "Product Name\t" << "Unit Price\t" << "Quantity Ordered\n";
-	cout << Fellow.Item.ProductName << "\t"
-		<< Fellow.Item.Unitprice
-		<< "\t" << Fellow.Item.Quantity;
-	cout << "\t\t\t\tTotal Price\t" << Fellow.Item.TotalPrice;
-	cout << "Thank you for your patronage";
-}
+	ofstream Write;
+	Write.open("Receipt.txt");
+	for (int i = 0; i <= 40; i++)
+		Write << "*";
+	Write << setw(20) << right << Eni->Stall.ShopName << "\n";
+	Write << setw(20) << left << Eni->Stall.Address << "\n";
+	Write << setw(20) << "Customer\t\t" << setw(20) << Eni->Being.CustomerName;
+	Write << setw(20) << left << "Phone Number\t";
+	Write << setw(20) << right << Eni->Being.Phonenumber << "\n";
 
-/**
-* main - tests code
-*
-* Return: 0 (success)
-*/
-int main(void)
-{
-	Person Human;
-	FillShoppingInfo(&Human);
-	WriteReceipt(Human);
 
-	return(0);
 }
