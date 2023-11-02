@@ -17,10 +17,10 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	some_array = malloc(sizeof(size));
+	some_array = malloc(size * sizeof(char));
 	if (some_array == NULL)
 		return (NULL);
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		*(some_array + i) = c;
 	} 
