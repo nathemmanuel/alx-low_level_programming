@@ -10,7 +10,8 @@
 
 void _puts_recursion(char *s)
 {
-	/* for a recursive operation, I was told
+	/*
+	 * for a recursive operation, I was told
 	 * to always include an exit operation, so
 	 * what is that exit condition now?
 	 * When s[] hits '\0'
