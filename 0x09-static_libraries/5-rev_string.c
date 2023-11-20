@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ * rev_string - reverses the string
+ * @s: holds the address of the array
+ *
+ * Return: Nothing
+ */
+
+void rev_string(char *s)
+{
+	int l, a;
+	char p;
+
+	a = 0;
+	l = 0;
+	while (*(s + l) != '\0')
+	{
+		l++;
+	}
+	l--;
+	while (a <= l)
+	{
+		p = *(s + l);
+		*(s + l) = *(s + a);
+		*(s + a) = p;
+
+		l--;
+		a++;
+	}
+}
